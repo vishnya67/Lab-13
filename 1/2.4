@@ -1,0 +1,9 @@
+def factorial_gen(max_n):
+    factorial = 1
+    yield factorial  # 0!
+
+    for i in range(1, max_n + 1):
+        factorial *= i
+        yield factorial
+
+print(list(factorial_gen(5)))
