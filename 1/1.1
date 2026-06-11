@@ -1,0 +1,11 @@
+def filter_positive_numbers(numbers):
+    return [x for x in numbers if x > 0]
+test_cases = [
+    [-5, 10, 0, 3, -1, 7],
+    [1, 2, 3, 4, 5],
+    [-10, -20, -30]
+]
+
+for case in test_cases:
+    result = filter_positive_numbers(case)
+    print(f"Вхід: {case} → Вихід: {result}")
